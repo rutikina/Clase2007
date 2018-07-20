@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-    <title>Comienzo</title>
+    <title>Jugadores por juego</title>
   </head>
   <body>
   <!--Bibliotecas P5.JS-->
@@ -11,13 +11,34 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
   <!--script P5.JS-->
   <script>
-      var w = windowWdth-10, h = 380;
   function setup(){
     var w = windowWidth-10, h = 380;
     var canvas = createCanvas(w,h);
+    noStroke();
+    smooth();
   }
   function draw(){
-    background(225);
+    background(200);
+      
+    fill(255,0,0);
+    ellipse(100,190,50,50);
+    textAlign(CENTER);
+    text("Rojo y Azul 1.165.140 viewers",100,300);
+      
+    fill(0,0,255);
+    ellipse(300,190,100,100);
+    textAlign(CENTER);
+    text("Cristal",300,300);
+      
+    fill(0,200,0);
+    ellipse;(500,190,75,75);
+    textAlign(CENTER);
+    text("Esmeralda",((windowWith/4)*3),300);
+      
+    fill(0);
+    ellipse(700,190,50,50);
+    textAlign(CENTER);
+    text("Rojo Fuego y Verde Hoja",((windowWith/4)*4,300))
   }    
   </script>
   </body>
